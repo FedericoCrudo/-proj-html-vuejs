@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+img{
+    object-fit: cover
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: red;
+}
+header{
+    width: 100%;
+    height: 789px;
+    background-image: url("../img/background-pattern-wavify.png");
+    background-position: center;
+    background-size: cover;
+    background-color: #f7f7fd;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+.container .nav-bar{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar .logo img{
+    width: 150px;
+}   
+.menu ul{
+    display: flex;
+    color: #3f3a64;
+    flex-wrap: wrap;
+}
+.menu ul li{
+    padding-right: 30px;
+    font-size: 18px;
+}
+.menu ul li i{
+    font-size: 12px;
+    cursor: pointer;
+}
+.icons-social{
+    font-size: 18px;
+}
+.icons-social i{
+   padding-right: 20px;
+   cursor: pointer;
+}
+.header-background-info {
+  width: 100%;
+  height: 84%;
+  display: flex;
+  align-items: center;
+  margin-top: 56px;
+}
+.header-background-info .left-info{
+     width: 40%;
+    display: flex;
+    flex-direction: column;
+    color:#333333 ;
+}
+.header-background-info .left-info >span{
+    line-height: 30px;
+}
+.header-background-info .left-info h1{
+    font-weight: normal;
+    padding: 25px 0;
+}
+.btn{
+   width: 220px;
+    padding: 13px 0;
+    color: white;
+    font-weight: bolder;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+.btn-green{
+    background-color: #20ad96;
+}
+
+.right  {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content:flex-end;
+    
+}
+.right img  {
+    height: 100%;
+        
+    
+}
+.right .img{
+    height: 100%;
+    width: 600px;
+    background-image: url("../img/home-movation-shape-face-300x267.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: -10% 80%;
+}
+
+
