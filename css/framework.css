@@ -12,16 +12,19 @@
     text-decoration: none;
     color: white;
   }
+  .cursor{
+    cursor: pointer;
+  }
  
     /* tipografy */
-    h1 {
-      font-size: 55px;
-    }
-    p{
-        font-size: 20px;
+    .font_size_45{
+      font-size: 45px;
     }
     .font_size_35{
       font-size: 35px;
+    }
+    .font_size_30{
+      font-size: 30px;
     }
     .font_size_18{
       font-size: 18px;
