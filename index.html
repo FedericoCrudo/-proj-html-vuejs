@@ -52,91 +52,104 @@
             </div>
         </header>
         <main>
-            <section class="stats m_top_bott_50">
-                <div class="container">
-                    <div class="stats-info">
-                        <ul>
-                            <li v-for="info in stats">
-                                <div class="content">
-                                   <span class="header-stats">{{info.number}}</span>
-                                    <span>{{info.infonumber}}</span> 
-                                </div>
-                            </li>
-    
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="about">
-                <div class="container">
-                    <div class="about-container">
-                        <span class="text_tras_up text-color colorgreen bold">about me</span>
-                        <div class="about-header m_top_20">
-                            <div class="left">
-                                <h2 class="font_size_30 text-dark">How to Be an Alpha Male: The 15 Habits of True Alphas</h2>
-                            </div>
-                            <div class="right">
-                                <h3 class="">Want to learn how to be
-                                    <span class="colorgreen cursor">an aplha male</span>
-                                     ? How to be more masculine? How to be the man you've always wanted to be?
-                                </h3>
-                                <p class="m_top_bott_10 text-color font_size_16">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                     Deleniti quae, at nisi id voluptas ea nesciunt voluptatibus labore ipsa sunt unde nam explicabo aliquid est possimus! H
-                                     arum laudantium obcaecati explicabo.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="about-body m_top_30 pd_B_50">
-                            <div class="left">
-                                <div class="icon-youtube">
-                                    <img class="absolute"src="img/icon-youtube-play.png" alt="">
-                                    <img src="img/home-movation-video-poster-670x450.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="right">
-                                      <span class="text font_size_25 text-dark">&#8220;Every morning you have two choices: 
-                                    continue to sleep with your dreams,
-                                    or wake up and chase them
-                                    &#8221;</span>
-                                    <div class="right-bottom">
-                                        <img src="img/home-movation-shape-01.png" alt="">
-                                        <span class="bold text-dark font_size_18 m_top_bott_20">Kaixa Stark</span>
-                                        <span class="text_tras_up font_size_12 text-color">wingman</span>
+            <div class="container">
+                <section class="stats m_top_bott_50">
+                        <div class="stats-info">
+                            <ul>
+                                <li v-for="info in stats">
+                                    <div class="content">
+                                    <span class="header-stats">{{info.number}}</span>
+                                        <span>{{info.infonumber}}</span> 
                                     </div>
-                            </div>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section class="Courses m_top_bottom_100">
-                <div class="container">
-                    <div class="courses-header text-center">
-                        <span class="text_tras_up text-color text-color font_size_16"> Begin your journey at maxcoach </span>
-                        <span class="font_size_35 text-dark m_top_bott_20">Latest <span class="colorgreen">Online Courses</span></span>
-                    </div>
-                    <div class="courses-body">
-                        <div v-for="(course,index) in courses" class="box">
-                            <div class="img">
-                                <img :src="'img/motivation-course-'+index+'-480x298.jpg'" alt="">
+                
+                </section>
+                <section class="about">
+                        <div class="about-container">
+                            <span class="text_tras_up text-color colorgreen bold">about me</span>
+                            <div class="about-header m_top_20">
+                                <div class="left">
+                                    <h2 class="font_size_30 text-dark">How to Be an Alpha Male: The 15 Habits of True Alphas</h2>
+                                </div>
+                                <div class="right">
+                                    <h3 class="">Want to learn how to be
+                                        <span class="colorgreen cursor">an aplha male</span>
+                                        ? How to be more masculine? How to be the man you've always wanted to be?
+                                    </h3>
+                                    <p class="m_top_bott_10 text-color font_size_16">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Deleniti quae, at nisi id voluptas ea nesciunt voluptatibus labore ipsa sunt unde nam explicabo aliquid est possimus! H
+                                        arum laudantium obcaecati explicabo.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="information-box m_top_10">
-                                <span class="text-color font_size_25">${{course.price}}</span>
-                                <span class="font_size_18 text-dark m_top_bott_20 title">{{course.title}}</span>
-                                <div class="info-courses text-color">
-                                    <span><i class="far fa-file-alt m_right_10"></i>{{course.lessons}}</span>
-                                    <span class="m_left15"><i class="far fa-user m_right_10"></i> {{course.students}}</span>
-                                    
+                            <div class="about-body m_top_30 pd_B_50">
+                                <div class="left">
+                                    <div class="icon-youtube">
+                                        <img class="absolute"src="img/icon-youtube-play.png" alt="">
+                                        <img src="img/home-movation-video-poster-670x450.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="right">
+                                        <span class="text font_size_25 text-dark">&#8220;Every morning you have two choices: 
+                                        continue to sleep with your dreams,
+                                        or wake up and chase them
+                                        &#8221;</span>
+                                        <div class="right-bottom">
+                                            <img src="img/home-movation-shape-01.png" alt="">
+                                            <span class="bold text-dark font_size_18 m_top_bott_20">Kaixa Stark</span>
+                                            <span class="text_tras_up font_size_12 text-color">wingman</span>
+                                        </div>
                                 </div>
                             </div>
                         </div>
-                         <button class="btn btn-green center m_top_50 ">View all courses <i class="fas fa-long-arrow-alt-right m_left10"></i></button> 
-                    
+                
+                </section>
+                <section class="Courses m_top_bottom_100">
+                        <div class="courses-header text-center">
+                            <span class="text_tras_up text-color text-color font_size_16"> Begin your journey at maxcoach </span>
+                            <span class="font_size_35 text-dark m_top_bott_20">Latest <span class="colorgreen">Online Courses</span></span>
+                        </div>
+                        <div class="courses-body">
+                            <div v-for="(course,index) in courses" class="box">
+                                <div class="img">
+                                    <img :src="'img/motivation-course-'+index+'-480x298.jpg'" alt="">
+                                </div>
+                                <div class="information-box m_top_10">
+                                    <span class="text-color font_size_25">${{course.price}}</span>
+                                    <span class="font_size_18 text-dark m_top_bott_20 title">{{course.title}}</span>
+                                    <div class="info-courses text-color">
+                                        <span><i class="far fa-file-alt m_right_10"></i>{{course.lessons}}</span>
+                                        <span class="m_left15"><i class="far fa-user m_right_10"></i> {{course.students}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-green center m_top_50 ">View all courses <i class="fas fa-long-arrow-alt-right m_left10"></i></button> 
+                        </div>
+                </section>
+                <section class="bookstore">
+                    <div class="bookstore-container">
+                        <span class="text_tras_up text-color colorgreen bold">Book Store Online</span>  
                     </div>
-                </div>
-               
-            </section>
+                    <div class="bookstore-boy">
+                        <div class="left">
+                            <h3>Be Alpha With <span class="colorgreen">Wingman's Book</span></h3>
+                            <ul>
+                                <li>Help you undestand yourself better</li>
+                                <li>Revealing mature tips</li>
+                                <li>give the right advice</li>
+                                <li>Fascinating examples of alpha man</li>
+                            </ul>
+                        </div>
+                        <div class="right">
+
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
-    </div>
+</div>
     
         <script src="js/script.js" charset="utf-8"></script>
     </body>

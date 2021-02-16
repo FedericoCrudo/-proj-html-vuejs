@@ -16,6 +16,9 @@ body{
 .center{
     margin:auto;
 }
+.left, .right{
+    width: 50%;
+}
 header{
     width: 100%;
     background-image: url("../img/background-pattern-wavify.png");
@@ -272,6 +275,18 @@ box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.39);
 .information-box .title{
     height: 60px;
 }
+.bookstore .left{
+    display: flex;
+    flex-direction: column;
+}
+.bookstore .left  ul {
+    display: block;
+  
+}
+.bookstore .left  ul li {
+    padding: 10px 0;
+}
+
 
 
 
