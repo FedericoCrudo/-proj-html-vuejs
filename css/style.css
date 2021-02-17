@@ -460,6 +460,9 @@ footer{
     padding:10px 0;
     cursor: pointer;
 }
+.right-menu ul li:hover{
+    color: white;
+}
 .fixed{
     position: fixed;
     bottom: 10px;
