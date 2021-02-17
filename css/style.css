@@ -112,9 +112,7 @@ header{
     
 }
 .header-background-info .right img  {
-   width: 75%;
-        
-    
+   width: 75%;  
 }
 .header-background-info .right .img{
     height: 100%;
@@ -473,4 +471,25 @@ footer{
     background-color: #20ad96;
     color: white;
     font-size: 41px;
+}
+.btn:hover{
+    background-color: #3f3a64;
+}
+.icons-absolute{
+    position: absolute;
+    top: 30%;
+    right: 0;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 7px 1px rgb(0 0 0 / 39%);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.39);
+    box-shadow: 0px 0px 7px 1px rgb(0 0 0 / 39%);
+    padding: 10px 5px;
+}
+.icons-absolute i{
+    cursor: pointer;
 }
