@@ -14,7 +14,7 @@
     </head>
     <body>
       <div id="app">
-        <header>
+        <header name="top">
             <div class="container">
                 <div class="nav-bar ">
                     <div class="logo">
@@ -41,7 +41,7 @@
                         <span  class="font_size_18 text-color">Success isn't overnight.It's when everyday you get a 
                                 little bettere than the day before.It all adds up.
                         </span>
-                        <button class="btn btn-green">Get Start For Free</button>
+                        <button class="btn btn-green">Get Start For Free<i class="fas fa-long-arrow-alt-right m_left10"></i></button>
                     </div>
                     <div class="right">
                         <div class="img">
@@ -120,37 +120,183 @@
                                     <span class="text-color font_size_25">${{course.price}}</span>
                                     <span class="font_size_18 text-dark m_top_bott_20 title">{{course.title}}</span>
                                     <div class="info-courses text-color">
-                                        <span><i class="far fa-file-alt m_right_10"></i>{{course.lessons}}</span>
-                                        <span class="m_left15"><i class="far fa-user m_right_10"></i> {{course.students}}</span>
+                                        <span><i class="far fa-file-alt m_right_10"></i>{{course.lessons}} Lessons</span>
+                                        <span class="m_left15"><i class="far fa-user m_right_10"></i> {{course.students}} Studets</span>
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn btn-green center m_top_50 ">View all courses <i class="fas fa-long-arrow-alt-right m_left10"></i></button> 
+                            <button class="btn btn-green center m_top_50 cursor ">View all courses <i class="fas fa-long-arrow-alt-right m_left10"></i></button> 
                         </div>
                 </section>
                 <section class="bookstore">
                     <div class="bookstore-container">
                         <span class="text_tras_up text-color colorgreen bold">Book Store Online</span>  
                     </div>
-                    <div class="bookstore-boy">
+                    <div class="bookstore-body m_top_30">
                         <div class="left">
-                            <h3>Be Alpha With <span class="colorgreen">Wingman's Book</span></h3>
-                            <ul>
-                                <li>Help you undestand yourself better</li>
-                                <li>Revealing mature tips</li>
-                                <li>give the right advice</li>
-                                <li>Fascinating examples of alpha man</li>
+                            <h2>Be Alpha With <span class="colorgreen">Wingman's Book</span></h2>
+                            <ul class="text-color m_top_20">
+                                <li><i class="fas fa-check m_right_10 ms_green"></i>Help you undestand yourself better</li>
+                                <li><i class="fas fa-check m_right_10 ms_green"></i>Revealing mature tips</li>
+                                <li><i class="fas fa-check m_right_10 ms_green"></i>give the right advice</li>
+                                <li><i class="fas fa-check m_right_10 ms_green"></i>Fascinating examples of alpha man</li>
                             </ul>
+                            <button class="btn btn-green m_top_30 cursor"> Get Free Ebook</button>
                         </div>
                         <div class="right">
+                            <div class="box-product">
+                                <div class="wrapp">
+                                    <img src="img/product-book-10-400x400.jpg" alt="">
+                                    <div class="options-icon">
+                                        <div class="circles"> <i class="fas fa-search"></i></div>
+                                        <div class="circles"><i class="fas fa-shopping-cart"></i> </div>  
+                                        <div class="circles"><i class="far fa-heart"></i></div>
+                                        <div class="circles"> <i class="fas fa-wifi"></i></div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="product-info text-center m_top_20 text-dark">
+                                    <span class=" text-dark font_size_18 bold">Alpha man By MaxCoah</span>
+                                    <span class="colorgreen font_size_25 m_top_20">$29.00</span>
+                                </div>
+                            
+                                
+                            </div>
+                            <div class="box-product m_left10">
+                                <div class="wrapp">
+                                    <img src="img/product-book-11-400x400.jpg" alt="">
+                                    <div class="options-icon">
+                                        <div class="circles"> <i class="fas fa-search"></i></div>
+                                        <div class="circles"><i class="fas fa-shopping-cart"></i> </div>  
+                                        <div class="circles"><i class="far fa-heart"></i></div>
+                                        <div class="circles"> <i class="fas fa-wifi"></i></div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="product-info text-center m_top_20 text-dark">
+                                    <span class="text-dark font_size_18 bold">Real Man 4.0 by Maxcoach</span>
+                                    <span class="colorgreen font_size_25 m_top_20">$29.00</span>
+                                </div>
+                                
+                            </div>
 
                         </div>
                     </div>
                 </section>
+                <section class="logos m_top_bottom_100">
+                    <div class="container">
+                        <div class="logos-img">
+                            <img src="img/client-logo-01-primary.png" alt="">
+                            <img src="img/client-logo-02-primary.png" alt="">
+                            <img src="img/client-logo-03-primary.png" alt="">
+                            <img src="img/client-logo-04-primary.png" alt="">
+                            <img src="img/client-logo-05-primary.png" alt="">
+                            <img src="img/client-logo-06-primary.png" alt="">
+                            <img src="img/client-logo-07-primary.png" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="real-stories ">
+                <div class="left-slider">
+                    <div class="content-real">
+                            <span class="text_tras_up colorgreen bold">real stories</span>
+                          
+                            <div class="info-testimonial"> 
+                                 <span class="m_top_bott_35 font_size_18 text-dark">
+                                    {{testimonial[count].descriptions}}
+                                </span>
+                                <img :src="testimonial[count].img" alt="">
+                                <span class="font_size_18 m_top_bott_20">{{testimonial[count].name}}</span>
+                                <span class="text-color">{{testimonial[count].work}}</span>
+                            </div>    
+                    </div>
+                    <div class="tools-arrow">
+                        <i @click="prev"class="fas fa-sort-up cursor"></i>
+                        <span>{{count+1}}/{{testimonial.length}}</span>
+                        <i @click="next" class="fas fa-sort-down cursor"></i>
+                    </div>
+                </div>
+                <div class="right-stories">
+                    <img src="img/home-movation-testimonial-image-600x439.jpg" alt="">
+                </div>
+            </section>
+            <div class="container">
+                <section class="blog m_top_bottom_100">
+                    <div class="blog-header">
+                        <span class="text_tras_up text-color colorgreen bold">blog updated</span>
+                        <h2 class="text-dark m_top_20 font_size_30">Interesting <span class="colorgreen">articles updated</span> daily</h2>
+                    </div>
+                    <div class="blog-body m_top_30">
+                        <div v-for="element in blog" class="box">
+                            <div class="img">
+                                <img :src="element.img" alt="">
+                            </div>
+                            <div class="information-box m_top_10">
+                                <div class="info-courses text-color">
+                                    <span><i class="far fa-file-alt m_right_10"></i>{{element.data}}</span>
+                                </div>
+                                <span class="font_size_18 text-dark m_top_bott_20 title">{{element.title}}</span>
+                                <span class="colorgreen">{{element.descriptions}}</span>
+                                
+                            </div>
+                        </div>
+                        <button class=" btn-particular   center m_top_50 cursor text_tras_up ">View all post </button> 
+                    </div>
+                </section>
             </div>
         </main>
-</div>
+        <footer>
+            <div class="container colorgreen">
+                <div class="footer-info ">
+                    <div class="left-address">
+                        <span class="bold ms_text_white font_size_18 ">Address</span>
+                        <ul >
+                            <li v-for="element in address">{{element}}</li>
+                        </ul>
+
+                    <div class="icons-social font_size_30 m_top_30">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    
+                    </div>
+                    
+                    <div class="right-menu">
+                        <!-- explorer -->
+                        <div class="explore m_right_80">
+                            <span class="bold ms_text_white font_size_18">Explorer</span>
+                            <div class="wrapp">
+                                <ul class="m_right_80">
+                                    <li v-for="element in explore ">{{element}}</li>
+                                </ul>
+                                <ul>
+                                    <li >Succes Story</li>
+                                    <li>Courses</li>
+                                    <li> Contact us</li>  
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="information">
+                            <span class="bold ms_text_white font_size_18">Explorer</span>
+                            <ul>
+                                <li v-for="info in information">{{info}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center m_top_100 pd_B_30"> <span class="">©2020 MaxCoach, All Rights Reserved</span> </div>
+            </div>
+        </footer>
+        <div class="fixed">
+            <div class="circles"> <a href="#top"><i class="fas fa-long-arrow-alt-up"></i></a> </div>
+        </div>
     
+    
+    </div>
+   
         <script src="js/script.js" charset="utf-8"></script>
     </body>
 </html>
